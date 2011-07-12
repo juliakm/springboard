@@ -84,8 +84,6 @@ function springboard_profile_tasks(&$task, $url) {
   define("SPRINGBOARD_FORM_REDIRECT", $url);
   if ($task == 'profile') {
     variable_set('install_profile', 'springboard');
-    variable_set('site_frontpage', 'admin/springboard');
-    variable_set('springboard_config_homepage', 1);
     drupal_install_modules(array('springboard'));
     springboard_configure_profile();
     springboard_configure_ubercart();
@@ -284,7 +282,6 @@ function springboard_map_salesforce_contacts() {
     // Fix webform draft button
     
     db_query('UPDATE {webform} SET allow_draft = 0 WHERE nid = %d', $node->nid);
-    drupal_set_message('nid:' . $node->nid . ' allow:' . db_result(db_query('SELECT allow_draft FROM {webform} WHERE nid = %d', $node->nid)));
 }
 
 /**
