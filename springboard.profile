@@ -80,7 +80,7 @@ function springboard_profile_task_list() {
  * Finalise installation
  */
 function springboard_profile_tasks(&$task, $url) {
-  include_once ('springboard.forms.inc');
+  include_once('springboard.forms.inc');
   define("SPRINGBOARD_FORM_REDIRECT", $url);
   if ($task == 'profile') {
     variable_set('install_profile', 'springboard');
@@ -280,7 +280,11 @@ function springboard_map_salesforce_contacts() {
     
     $node = (object) $settings;
     node_save($node);
-  
+    
+    // Fix webform draft button
+    
+    db_query('UPDATE {webform} SET allow_draft = 0 WHERE nid = %d', $node->nid);
+    drupal_set_message('nid:' . $node->nid . ' allow:' . db_result(db_query('SELECT allow_draft FROM {webform} WHERE nid = %d', $node->nid)));
 }
 
 /**
