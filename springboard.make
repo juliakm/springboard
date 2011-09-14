@@ -38,7 +38,7 @@ projects[fusion][download][url] = "http://git.drupal.org/project/fusion.git"
 ;Springboard
 projects[springboard][type] = module
 projects[springboard][download][type] = git
-projects[springboard][download][url] = git@github.com:JacksonRiver/Springboard.git
+projects[springboard][download][url] = "git://github.com/JacksonRiver/Springboard.git"
 projects[springboard][download][branch] = 6.x-3.0-dev
 
 
