@@ -19,6 +19,8 @@ projects[securepages][version] = "1.9"
 projects[securepages][subdir] = contrib
 projects[skinr][subdir] = contrib
 projects[admin_menu][subdir] = contrib
+projects[email][subdir] = contrib
+projects[features][subdir] = contrib
 
 ;Development modules
 projects[coder][subdir] = "developer"
