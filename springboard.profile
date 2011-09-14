@@ -27,10 +27,19 @@ function springboard_profile_modules() {
     'help',
     'menu',
     'profile',
+    'path',
+    'statistics',
     'trigger',
-    'path', 
 
     // CCK
+    'content',
+    'optionwidgets',
+    'text',
+    'number',
+    'email',
+ 
+    // Features
+    'features',
 
     // Misc
     'token',
@@ -38,6 +47,7 @@ function springboard_profile_modules() {
     'pathauto',
     'ctools',
     'securepages',
+    'admin_menu',
 
     // Ubercart
     'uc_cart',
@@ -47,17 +57,18 @@ function springboard_profile_modules() {
     'uc_store',
     'uc_payment',
     'uc_credit',
-    'uc_authorizenet',
+    'gm_authorizenet',
     'test_gateway',
 
     // Views
- 
+    'views',
+    'views_ui', 
+
     // Springboard custom
-    'capwiz',
     'fundraiser',
+    'email_confirmation',
     'market_source',
     'webform_user',
-    'webform_ab',
   );
 
   return $modules;
@@ -194,8 +205,6 @@ function springboard_form($form) {
 }
 
 function springboard_form_validate() {
-
-  drupal_set_message('global validate');
 
 }
 

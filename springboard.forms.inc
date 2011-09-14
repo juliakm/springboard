@@ -39,16 +39,16 @@ function springboard_task_salesforce_validate(&$form, &$form_state) {
 function springboard_task_salesforce_submit($form, &$form_state) {
 
   if ($form_state['values']['sf_enable']) {
+  
+    // Variable used to indicate the Salesforce configuration form should be displayed on the Dashboard.
     variable_set('springboard_salesforce_enabled', 1);
-    // Override Drupal's "river of news" homepage with Springboard welcome & configure screen.
-    variable_set('site_frontpage', 'admin/springboard');
-    variable_set('springboard_config_homepage', 1);
 
     //TODO: add conditional logic to enable Salesforce helper modules based on form selections.
     // Enable Salesforce module suite.
     
     $optional = array(
-      'sf_import',
+      'queue_api',
+      'sb_npsp',
       'salesforce_management_api',
       'queue_processor',
       'sf_node',
