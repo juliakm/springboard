@@ -58,8 +58,9 @@ function springboard_profile_modules() {
     'uc_store',
     'uc_payment',
     'uc_credit',
-    'gm_authorizenet',
     'test_gateway',
+    'uc_authorizenet',
+    'authorizenet_cim',
 
     // Views
     'views',
