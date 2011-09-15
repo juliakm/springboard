@@ -24,6 +24,7 @@ function springboard_profile_details() {
 function springboard_profile_modules() {
   $modules = array(
     // Core optional
+    'dblog',
     'help',
     'menu',
     'profile',
