@@ -221,7 +221,7 @@ function springboard_map_salesforce_contacts() {
 
   // build a query to insert the default fieldmap
   $sql = "INSERT INTO {salesforce_management_field_map}
-    VALUES (1, 'Authenticated users', 'user', 'Contact', '', 0, '%s', '%s', '%s', 'Email', 2, '0', '%s'";
+    VALUES (1, 'Authenticated users', 'user', 'Contact', '', 0, '%s', '%s', '%s', 'Email', 2, '0', '%s')";
   
   // run it   
   db_query($sql, $fields, $business, $business_sd, $validation);
