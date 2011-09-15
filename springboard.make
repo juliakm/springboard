@@ -21,6 +21,7 @@ projects[skinr][subdir] = contrib
 projects[admin_menu][subdir] = contrib
 projects[email][subdir] = contrib
 projects[features][subdir] = contrib
+projects[webform_ab][subdir] = contrib
 
 ;Development modules
 projects[coder][subdir] = "developer"
