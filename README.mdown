@@ -9,4 +9,4 @@ Note for GitHub users
 If you checkout or download this install profile from GitHub directly, be aware that this is not a complete package: this project contains only the install profile definition and `make` file that lists the required modules. There are two other projects that complete the puzzle:
 
 * [springboard_modules](https://github.com/JacksonRiver/springboard_modules): Contains only the modules that are specific to Springboard. These can be dropped into an existing Drupal site to add Springboard functionality to it.
-* [Springboard-Build](https://github.com/JacksonRiver/Springboard-Build): A `drush make` file that will download and assemble the installation profile and all necessary pieces. If you want to download the install-ready codebase to play around with, use this one.
+* [Springboard-Build](https://github.com/JacksonRiver/Springboard-Build): A `drush make` file that will download and assemble the installation profile and all necessary pieces. If you want to download the install-ready codebase to play around with, this is where you should start.
