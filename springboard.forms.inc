@@ -50,6 +50,7 @@ function springboard_task_salesforce_submit($form, &$form_state) {
       'queue_api',
       'sb_npsp',
       'salesforce_management_api',
+      'encrypt', // Dependency of salesforce_management_api
       'queue_processor',
       'sf_node',
     );
